@@ -12,8 +12,6 @@ screen = Screen()
 screen.listen()
 # bind a function to a keystroke
 # prompt user to enter a keystroke
-# convert user input to lower()
-
 
 def move_foward():
     sketch.forward(10)
