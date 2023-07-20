@@ -1,16 +1,13 @@
-# This is a sample Python script.
+from turtle import Turtle, Screen
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+spice = Turtle()
+screen = Screen()
 
+# start listening
+screen.listen()
+# bind a function to a keystroke
+def move_foward():
+    spice.forward(10)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+screen.onkey(key= "space", fun=move_foward)
+screen.exitonclick()
